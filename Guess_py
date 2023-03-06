@@ -6,4 +6,4 @@ while guess != 6 and tries != 3:
 if guess == 6:
     print('you got it :))')
 else:
-    print('your card blocked')
+    print('Try next time')
