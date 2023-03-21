@@ -1,0 +1,28 @@
+a = int(input ('enter first value: '))
+c = input ('+, - , * or / ? ')
+b = int(input ('enter second value: '))
+result = 0
+
+try:
+    if c == '+':
+        result = int(a + b)
+        print('result = ' + str(result))
+
+    elif c == '-':
+        result = int (a - b)
+        print('result = ' + str(result))
+
+    elif c == '*':
+        result = int (a * b)
+        print('result' + str(result))
+
+    elif c == '/':
+        result = int (a / b)
+        print('result ' + str(result))
+
+    else:
+        print('enter correct value')
+except ZeroDivisionError:
+    result = 0
+    print('cannot be divided by 0')
+
